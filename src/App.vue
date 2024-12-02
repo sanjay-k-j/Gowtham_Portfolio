@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <HeroSection />
+    <ServicesSection />
+    <ContactSection />
+    <WhatsApp />
+    <ContactUs />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeroSection from "./components/HeroSection.vue";
+import ServicesSection from "./components/ServicesSection.vue";
+import ContactSection from "./components/ContactSection.vue";
+import WhatsApp from "./components/WhatsApp.vue"
+import ContactUs from "./components/ContactUs.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HeroSection,
+    ServicesSection,
+    ContactSection,
+    WhatsApp,
+    ContactUs,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* Global styling can go here if needed */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 </style>
+
